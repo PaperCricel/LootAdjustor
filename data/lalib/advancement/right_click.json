@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "right_click": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "lalib": {
+                "item": "block_finder"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "lalib:sys/block_finder/right_click/trigger"
+  }
+}

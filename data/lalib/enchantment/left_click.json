@@ -1,0 +1,31 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "",
+    "fallback": "Left Click"
+  },
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 1
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 1
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "paper",
+  "weight": 1,
+  "effects": {
+    "minecraft:post_piercing_attack": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "lalib:sys/block_finder/left_click/trigger"
+        }
+      }
+    ]
+  }
+}
