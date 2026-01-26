@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Loot Adjustor Menu",
+  "actions": [
+    {
+      "label": "Create Loot Storage",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "lalib:create_storage"
+      }
+    }
+  ]
+}

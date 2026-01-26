@@ -12,6 +12,3 @@ $give @s paper[\
     consumable={consume_seconds:0.05,animation:"none",sound:"intentionally_empty",has_consume_particles:false},\
     attack_range={max_reach:64,min_reach:64,max_creative_reach:64,min_creative_reach:64},\
 ]
-
-# init storage
-$execute unless data storage lalib:loot_storage $(id) run data modify storage lalib:loot_storage $(id) set value {id:$(id),containers:[]}

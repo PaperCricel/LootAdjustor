@@ -1,6 +1,5 @@
 
-$execute positioned $(x) $(y) $(z) positioned ~ ~0.5 ~ run function lalib:sys/player/find_block/fx/success
-$data modify block $(x) $(y) $(z) Items set from storage lalib:temp return.containers[0].Items
+$execute positioned $(x) $(y) $(z) run function lalib:sys/return_loots/return/block
 $forceload remove $(x) $(z)
 
 data remove storage lalib:temp return.containers[0]

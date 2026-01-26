@@ -1,2 +1,0 @@
-
-setblock ~ ~ ~ oak_shelf

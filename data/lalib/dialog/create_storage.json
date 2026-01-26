@@ -1,0 +1,73 @@
+{
+  "type": "minecraft:confirmation",
+  "title": {
+    "text": "🧰 Create Loot Storage"
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {
+          "text": "ℹ ",
+          "color": "#e8b764"
+        },
+        {
+          "text": "Tips",
+          "bold": true,
+          "underlined": true,
+          "hover_event": {
+            "action": "show_text",
+            "value": [
+              {
+                "text": "◆ ",
+                "color": "#e8b764"
+              },
+              {
+                "text": "Management Width",
+                "color": "gray",
+                "bold": true
+              },
+              {
+                "text": "\nWhen the count of containers out of the width, it will place at the left side instead.",
+                "color": "gray"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "type": "minecraft:text",
+      "key": "id",
+      "width": 100,
+      "label": {
+        "text": "Storage ID"
+      },
+      "max_length": 100
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "width",
+      "label": {
+        "text": "Management Width",
+        "type": "text"
+      },
+      "start": 1,
+      "end": 50,
+      "step": 1,
+      "initial": 20
+    }
+  ],
+  "yes": {
+    "label": "Confirm",
+    "action": {
+      "type": "dynamic/run_command",
+      "template": "function lalib:api/create_storage {id:$(id),width:$(width)}"
+    }
+  },
+  "no": {
+    "label": "Cancel"
+  }
+}
