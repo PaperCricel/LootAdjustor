@@ -5,17 +5,17 @@
       "conditions": {
         "item": {
           "predicates": {
-            "minecraft:custom_data": {
-              "lalib": {
-                "item": "block_finder"
+            "minecraft:enchantments": [
+              {
+                "enchantments": "lalib:right_click"
               }
-            }
+            ]
           }
         }
       }
     }
   },
   "rewards": {
-    "function": "lalib:sys/block_finder/right_click/trigger"
+    "function": "lalib:sys/player/right_click"
   }
 }

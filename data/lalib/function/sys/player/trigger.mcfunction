@@ -1,0 +1,5 @@
+
+execute if score @s lalib.trigger matches 1 at @e[tag=lalib.controller.for_dialog,type=marker,limit=1] run function lalib:sys/controller/right_click/delete with storage lalib:temp for_dialog
+execute if score @s lalib.trigger matches 2 run function lalib:sys/controller/right_click/clear
+
+scoreboard players reset @s lalib.trigger

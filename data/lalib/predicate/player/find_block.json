@@ -1,0 +1,39 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "slots": {
+                    "weapon.mainhand": {
+                        "predicates": {
+                            "enchantments": [
+                                {
+                                    "enchantments": "lalib:left_click"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "slots": {
+                    "weapon.mainhand": {
+                        "predicates": {
+                            "enchantments": [
+                                {
+                                    "enchantments": "lalib:right_click"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

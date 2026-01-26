@@ -1,0 +1,6 @@
+
+# fx
+title @a[tag=lalib.return_loots.user,limit=1] actionbar ["",{color:"dark_aqua",bold:true,text:"[LALIB] "},{color:"gray",text:"Replace all containers back from "},{color:"white",nbt:"curr_storage.id",storage:"lalib:temp"},{color:"gray",text:"."}]
+execute as @a[tag=lalib.return_loots.user,limit=1] at @s run playsound minecraft:block.decorated_pot.insert master @s ~ ~ ~ 1 0
+
+tag @a[tag=lalib.return_loots.user,limit=1] remove lalib.return_loots.user

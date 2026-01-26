@@ -1,8 +1,8 @@
 
-$give @s paper[\
-    item_model="black_bundle",\
-    item_name=[{"text": "Container Grabber ","color": "white"},{"text":"($(id))","color":"gray"}],\
-    custom_data={"lalib":{"item":"grabber","id":"$(id)"}},\
+give @s paper[\
+    item_model="brush",\
+    item_name=[{"text": "Storage Controller","color": "white"}],\
+    custom_data={"lalib":{"item":"controller"}},\
     enchantments={"lalib:left_click":1,"lalib:right_click":1},\
     enchantment_glint_override=false,\
     tooltip_display={"hidden_components": ["enchantments","attribute_modifiers"]},\
@@ -12,6 +12,3 @@ $give @s paper[\
     consumable={consume_seconds:0.05,animation:"none",sound:"intentionally_empty",has_consume_particles:false},\
     attack_range={max_reach:64,min_reach:64,max_creative_reach:64,min_creative_reach:64},\
 ]
-
-# init storage
-$execute unless data storage lalib:loot_storage $(id) run data modify storage lalib:loot_storage $(id) set value {id:$(id),containers:[]}
