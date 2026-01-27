@@ -1,9 +1,8 @@
 
-# init storage
-$execute unless data storage lalib:loot_storage $(id) run \
-data modify storage lalib:loot_storage $(id) set value {id:$(id),management:{width:$(width)},containers:[]}
+$execute if data storage lalib:loot_storage $(id) run return run function lalib:sys/loot_storage/already_exist
 
-# get grabber
+# init storage
+$data modify storage lalib:loot_storage $(id) set value {id:$(id),management:{max_width:$(max_width)},containers:[]}
 $function lalib:api/get_grabber {id:"$(id)"}
 
 # fx

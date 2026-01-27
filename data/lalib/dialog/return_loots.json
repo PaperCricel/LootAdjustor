@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:confirmation",
+  "title": {
+    "text": "Return Loot From Storage"
+  },
+  "inputs": [
+    {
+      "type": "minecraft:text",
+      "key": "id",
+      "width": 100,
+      "label": {
+        "text": "Storage ID"
+      },
+      "max_length": 100
+    }
+  ],
+  "yes": {
+    "label": "Confirm",
+    "action": {
+      "type": "dynamic/run_command",
+      "template": "function lalib:api/return_loots {id:$(id)}"
+    }
+  },
+  "no": {
+    "label": "Cancel",
+    "action": {
+      "type": "show_dialog",
+      "dialog": "lalib:menu"
+    }
+  }
+}

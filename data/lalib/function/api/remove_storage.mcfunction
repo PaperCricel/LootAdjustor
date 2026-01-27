@@ -1,4 +1,6 @@
 
+$execute unless data storage lalib:loot_storage $(id) run return run function lalib:sys/loot_storage/not_found
+
 $data remove storage lalib:loot_storage $(id)
 $clear @a paper[custom_data~{lalib:{id:"$(id)"}}]
 

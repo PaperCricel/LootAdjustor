@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Loot Storage Settings"
+  },
+  "inputs": [
+    {
+      "type": "minecraft:text",
+      "key": "id",
+      "width": 100,
+      "label": {
+        "text": "Storage ID"
+      },
+      "max_length": 100
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "max_width",
+      "label": {
+        "text": "Management Width",
+        "type": "text"
+      },
+      "start": 1,
+      "end": 50,
+      "step": 1,
+      "initial": 20
+    }
+  ],
+  "actions": [
+    {
+      "label": {
+        "text": "Remove Loot Storage",
+        "color": "red"
+      },
+      "tooltip": ["",{"color":"gray","text":"Once you delete a "},{"color":"#e8b764","text":"Loot Storage"},{"color":"gray","text":", there is no going back. Please be certain."}],
+      "action": {
+        "type": "dynamic/run_command",
+        "template": "function lalib:api/remove_storage {id:$(id)}"
+      }
+    }
+  ]
+}

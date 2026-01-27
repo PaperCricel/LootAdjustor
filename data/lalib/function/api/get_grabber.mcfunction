@@ -1,7 +1,10 @@
 
+$execute unless data storage lalib:loot_storage $(id) run return run function lalib:sys/loot_storage/not_found
+
 $give @s paper[\
     item_model="black_bundle",\
     item_name=[{"text": "Container Grabber ","color": "white"},{"text":"($(id))","color":"gray"}],\
+    lore=[[{"italic":false,"color":"white","text":""},{"color":"gray","text":"Left Click:"}],[{"italic":false,"color":"white","text":""},{"color":"gray","text":"◆ "},{"color":"#e8b764","text":"Add"},{"color":"gray","text":" container to "},{"color":"#e8b764","text":"Loot Storage"},{"color":"gray","text":"."}],[{"italic":false,"color":"white","text":""}],[{"italic":false,"color":"white","text":""},{"color":"gray","text":"Right Click:"}],[{"italic":false,"color":"white","text":""},{"color":"gray","text":"◆ "},{"color":"#e8b764","text":"Remove"},{"color":"gray","text":" container from "},{"color":"#e8b764","text":"Loot Storage"},{"color":"gray","text":"."}]],\
     custom_data={"lalib":{"item":"grabber","id":"$(id)"}},\
     enchantments={"lalib:left_click":1,"lalib:right_click":1},\
     enchantment_glint_override=false,\

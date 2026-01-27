@@ -3,3 +3,4 @@ execute if score @s lalib.trigger matches 1 at @e[tag=lalib.controller.for_dialo
 execute if score @s lalib.trigger matches 2 run function lalib:sys/controller/right_click/clear
 
 scoreboard players reset @s lalib.trigger
+advancement revoke @s only lalib:trigger_score
