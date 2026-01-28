@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "swich_offhand": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "slots": {
+            "weapon.offhand": {
+              "predicates": {
+                "minecraft:custom_data": {
+                  "lalib": {
+                    "item": "controller"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "lalib:player/open_settings/use"
+  }
+}

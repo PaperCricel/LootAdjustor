@@ -23,7 +23,7 @@
       {
         "effect": {
           "type": "minecraft:run_function",
-          "function": "lalib:sys/player/left_click"
+          "function": "lalib:player/left_click"
         }
       }
     ]

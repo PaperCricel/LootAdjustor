@@ -1,53 +1,30 @@
 {
   "type": "minecraft:multi_action",
   "title": "Loot Adjustor Menu",
-  "columns": 3,
+  "columns": 1,
   "actions": [
     {
       "label": ["",{"color":"#6eaaf0","text":"Create Loot Storage"}],
-      "tooltip": ["",{"color":"gray","text":"Create "},{"color":"#e8b764","text":"Loot Storage"},{"color":"gray","text":" to store items, manageable via "},{"color":"#e8b764","text":"Container Grabber"},{"color":"gray","text":" and "},{"color":"#e8b764","text":"Management Controller"},{"color":"gray","text":"."}],
+      "tooltip": ["",{"color":"gray","text":"Create a "},{"color":"#e8b764","text":"Loot Storage"},{"color":"gray","text":" to store items, manageable via "},{"color":"#e8b764","text":"Loot Controller"},{"color":"gray","text":"."}],
       "action": {
         "type": "minecraft:show_dialog",
         "dialog": "lalib:create_storage"
       }
     },
     {
-      "label": ["",{"color":"#6eaaf0","text":"Loot Storage Settings"}],
+      "label": ["",{"color":"#8af06e","text":"Get Loot Controller"}],
+      "tooltip": ["",{"color":"gray","text":"This tool can "},{"color":"#e8b764","text":"open settings"},{"color":"gray","text":" and "},{"color":"#e8b764","text":"add / save / remove"},{"color":"gray","text":" containers in "},{"color":"#e8b764","text":"Loot Storage"},{"color":"gray","text":"."}],
       "action": {
         "type": "minecraft:show_dialog",
-        "dialog": "lalib:setting_storage"
+        "dialog": "lalib:get_controller"
       }
     },
     {
-      "label": ["",{"color":"#6eaaf0","text":"Return Loots From Storage"}],
-      "tooltip": ["",{"color":"gray","text":"Literally."}],
+      "label": ["",{"color":"#f0cf6e","text":"Import Loots"}],
+      "tooltip": ["",{"color":"gray","text":"Import loots from "},{"color":"#e8b764","text":"Loot Storage"},{"color":"gray","text":" directly."}],
       "action": {
         "type": "minecraft:show_dialog",
-        "dialog": "lalib:return_loots"
-      }
-    },
-    {
-      "label": ["",{"color":"#8af06e","text":"Get Container Grabber"}],
-      "tooltip": ["",{"color":"gray","text":"Left/Right click to "},{"color":"#e8b764","text":"add or remove Loot Storage"},{"color":"gray","text":" containers."}],
-      "action": {
-        "type": "minecraft:show_dialog",
-        "dialog": "lalib:get_grabber"
-      }
-    },
-    {
-      "label": ["",{"color":"#8af06e","text":"Get Management Controller"}],
-      "tooltip": ["",{"color":"gray","text":"Left/Right click to "},{"color":"#e8b764","text":"save or remove"},{"color":"gray","text":" containers from the "},{"color":"#e8b764","text":"Management Area"},{"color":"gray","text":"."}],
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "function lalib:api/get_controller"
-      }
-    },
-    {
-      "label": ["",{"color":"#f0cb6e","text":"Load Management Area"}],
-      "tooltip": ["",{"color":"gray","text":"Create a "},{"color":"#e8b764","text":"Management Area"},{"color":"gray","text":" in front of you to deploy all "},{"color":"#e8b764","text":"Loot Storage"},{"color":"gray","text":" containers.\n"},{"color":"dark_gray","text":"(Containers will stack to the left if the preset width is exceeded.)"}],
-      "action": {
-        "type": "minecraft:show_dialog",
-        "dialog": "lalib:load_management"
+        "dialog": "lalib:import_loots"
       }
     }
   ]

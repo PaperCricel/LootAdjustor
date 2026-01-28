@@ -17,7 +17,7 @@
           "underlined": true,
           "hover_event": {
             "action": "show_text",
-            "value": ["",{"color":"#e8b764","text":"◆ "},{"color":"gray","text":"","extra":[{"bold":true,"text":"Management Width\n"},{"color":"gray","text":"Containers will stack to the left if the width is exceeded."}]}]
+            "value": ["",{"color":"#e8b764","text":"◆ "},{"color":"gray","text":"","extra":[{"bold":true,"text":"Management Width\n"},"Containers will stack to the left if the width"]},"\n",{"color":"gray","text":"is exceeded.\n\n"},{"color":"#E8B764","text":"◆ "},{"color":"gray","text":"","extra":[{"bold":true,"text":"Management Center\n"},"The center is set to your current position"]},"\n",{"color":"gray","text":"upon creation. You can relocate the center\nby "},{"color":"#e8b764","text":"Loot Controller"},{"color":"gray","text":"."}]
           }
         }
       ]

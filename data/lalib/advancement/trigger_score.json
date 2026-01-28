@@ -18,6 +18,6 @@
     }
   },
   "rewards": {
-    "function": "lalib:sys/player/trigger"
+    "function": "lalib:player/trigger"
   }
 }

@@ -16,6 +16,6 @@
     }
   },
   "rewards": {
-    "function": "lalib:sys/player/right_click"
+    "function": "lalib:player/right_click"
   }
 }
