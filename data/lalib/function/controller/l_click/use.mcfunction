@@ -1,9 +1,10 @@
 ## usage : add/save container to storage
 
 function lalib:controller/block/use
+function lalib:controller/rarity/stamp
 function lalib:controller/storage/load with storage lalib:temp current
 
-# elif (already added) :
+# if (already added) :
 execute if function lalib:controller/is_repeat/use run return run function lalib:controller/l_click/save with storage lalib:temp current
 
 # else :

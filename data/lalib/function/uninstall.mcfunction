@@ -2,6 +2,8 @@
 scoreboard objectives remove lalib.main
 scoreboard objectives remove lalib.trigger
 
+kill @e[tag=lalib.highlight,type=item_display]
+
 # fx
 title @s actionbar ["",{color:"dark_aqua",bold:true,text:"[LALIB] "},{color:"gray",text:"Uninstalled."}]
 playsound minecraft:entity.player.levelup master @s ~ ~ ~ 0.2 2

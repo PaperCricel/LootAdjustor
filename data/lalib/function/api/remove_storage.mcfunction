@@ -1,6 +1,8 @@
 
 $execute unless data storage lalib:loot_storage $(id) run return run function lalib:player/info/not_found
 
+$execute if data storage lalib:loot_storage $(id).highlight run function lalib:api/dehighlight {id:"$(id)"}
+
 $data remove storage lalib:loot_storage $(id)
 $clear @a paper[custom_data~{lalib:{id:"$(id)"}}]
 
