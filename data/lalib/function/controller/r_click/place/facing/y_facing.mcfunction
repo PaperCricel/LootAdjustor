@@ -1,5 +1,6 @@
 
 execute if entity @s[x_rotation=89..91] run return run data modify storage lalib:temp current.block.facing set value '[facing=down]'
+execute if entity @s[tag=lalib.controller.r_click.pickup.no_up,x_rotation=-91..-89] run return run data modify storage lalib:temp current.block.facing set value '[facing=down]'
 execute if entity @s[x_rotation=-91..-89] run return run data modify storage lalib:temp current.block.facing set value '[facing=up]'
 
 execute if entity @s[y_rotation=0] run return run data modify storage lalib:temp current.block.facing set value '[facing=south]'

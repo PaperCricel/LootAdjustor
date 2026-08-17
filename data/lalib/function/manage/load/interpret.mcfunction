@@ -11,5 +11,5 @@ tag @s remove lalib.load.user
 
 # fx
 execute if score #pass lalib.main matches 0 run return fail
-title @s actionbar ["",{color:"dark_aqua",bold:true,text:"[LALIB] "},{color:"gray",text:"Load "},{color:"white",nbt:"curr_storage.id",storage:"lalib:temp"},{color:"gray",text:" successfully."}]
+execute unless score #silent lalib.main matches 1 run title @s actionbar ["",{color:"dark_aqua",bold:true,text:"[LALIB] "},{color:"gray",text:"Load "},{color:"white",nbt:"curr_storage.id",storage:"lalib:temp"},{color:"gray",text:" successfully."}]
 playsound minecraft:block.vault.eject_item master @s ~ ~ ~ 1 0.75

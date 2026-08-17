@@ -6,6 +6,7 @@ execute unless block ~ ~ ~ #lalib:transparent run return run function lalib:play
 tag @s remove lalib.controller.r_click.pickup
 
 data modify storage lalib:temp current set from entity b0cc4ea9-3e6c-4b3c-b66c-dda2e35945c7 data
+data modify storage lalib:temp current.block.sid set from storage lalib:temp current.id
 execute as b0cc4ea9-3e6c-4b3c-b66c-dda2e35945c7 run function lalib:controller/r_click/place/facing/use
 function lalib:controller/r_click/place/interpret with storage lalib:temp current.block
 kill b0cc4ea9-3e6c-4b3c-b66c-dda2e35945c7

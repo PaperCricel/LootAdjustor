@@ -3,6 +3,7 @@
         "dropper",
         "dispenser",
         "barrel",
+        "hopper",
         "#shulker_boxes"
     ]
 }

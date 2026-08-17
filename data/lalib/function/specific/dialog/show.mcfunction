@@ -1,0 +1,13 @@
+
+# specific loots edit
+$dialog show @s {"type": "minecraft:multi_action","title": "Specific Loots Edit","columns": 1,\
+"body": [\
+    {"type": "minecraft:plain_message","width": 280,"contents": ["",{"color":"gray","text":"Reference : "},{"color":"white","text":"$(item_id)"}]},\
+    {"type": "minecraft:plain_message","width": 280,"contents": ["",{"color":"gray","text":"Found "},{"color":"#e8b764","text":"$(count)"},{"color":"gray","text":" item(s) in "},{"color":"#e8b764","text":"$(stack)"},{"color":"gray","text":" stack(s) inside "},{"color":"white","text":"$(id)"},{"color":"gray","text":"."}]}],\
+"inputs": [\
+    {"type": "minecraft:boolean","key": "override","label": {"text": "Override Count","hover_event": {"action": "show_text","value": ["",{"color":"gray","text":"Take the replacement's stack size as well, instead of keeping each entry's original count. Every hand-tuned quantity this replace touches is overwritten. "},{"color":"red","text":"There is no going back."}]}},"initial": false,"on_true": "1","on_false": "0"},\
+    {"type": "minecraft:boolean","key": "reload","label": {"text": "Reload Management Area","hover_event": {"action": "show_text","value": ["",{"color":"gray","text":"Rebuild the "},{"color":"#e8b764","text":"Management Area"},{"color":"gray","text":" as soon as the replacement lands, so it shows the new item. Skipped when nothing matched."}]}},"initial": false,"on_true": "1","on_false": "0"}],\
+"actions": [\
+    {"label": ["",{"color":"#f0a26e","text":"Replace to the Hotbar 3rd"}],"tooltip": ["",{"color":"gray","text":"Rewrite every counted stack to the item in your "},{"color":"#e8b764","text":"3rd hotbar slot"},{"color":"gray","text":", keeping its slot and its stack size. Only items whose data is "},{"color":"#e8b764","text":"exactly identical"},{"color":"gray","text":" to the reference are touched. Leave the "},{"color":"#e8b764","text":"3rd hotbar slot"},{"color":"gray","text":" empty to "},{"color":"red","text":"delete"},{"color":"gray","text":" them from this "},{"color":"#e8b764","text":"Loot Storage"},{"color":"gray","text":" instead. "},{"color":"red","text":"There is no going back."}],"action": {"type": "dynamic/run_command","template": "function lalib:api/specific_replace {id:\"$(id)\",override:\u0024(override),reload:\u0024(reload)}"}},\
+    {"label": ["",{"color":"gray","text":"Back to Settings"}],"tooltip": ["",{"color":"gray","text":"Return to "},{"color":"#e8b764","text":"Loot Storage Settings"},{"color":"gray","text":"."}],"action": {"type": "run_command","command": "function lalib:player/open_settings/interpret {id:\"$(id)\"}"}}\
+]}

@@ -7,7 +7,7 @@ function lalib:controller/storage/load with storage lalib:temp current
 execute unless function lalib:controller/is_repeat/use run return run function lalib:player/info/cant_delete
 
 # elif (shift) :
-execute if predicate lalib:player/is_sneak run return run function lalib:controller/r_click/pickup/use
+execute if predicate lalib:player/is_sneak run return run function lalib:controller/r_click/pickup/check
 
 # else :
 summon marker ~ ~ ~ {Tags:["lalib.controller.for_dialog"]}

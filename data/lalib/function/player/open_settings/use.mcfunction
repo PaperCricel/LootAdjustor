@@ -8,6 +8,5 @@ item replace entity @s weapon.offhand with air
 
 data modify storage lalib:temp offhand.id set from entity @s SelectedItem.components."minecraft:custom_data".lalib.id
 function lalib:player/open_settings/interpret with storage lalib:temp offhand
-data remove storage lalib:temp offhand
 
 advancement revoke @s only lalib:open_settings
