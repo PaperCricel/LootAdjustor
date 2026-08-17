@@ -1,4 +1,3 @@
-
 particle end_rod ~0.6 ~-0.6 ~-0.6 0 0 0 1000000 1 force
 particle end_rod ~-0.6 ~-0.6 ~-0.6 0 0 0 1000000 1 force
 particle end_rod ~-0.6 ~-0.6 ~0.6 0 0 0 1000000 1 force
@@ -83,3 +82,7 @@ particle end_rod ~0.6 ~0.6 ~0.6 0 0 0 1000000 1 force
 particle end_rod ~-0.6 ~0.6 ~0.6 0 0 0 1000000 1 force
 particle end_rod ~0.6 ~0.6 ~-0.6 0 0 0 1000000 1 force
 particle end_rod ~-0.6 ~0.6 ~-0.6 0 0 0 1000000 1 force
+
+# loot table layer
+execute if data block ~ ~ ~ LootTable run return run function lalib:player/find_block/fx/loot_table
+execute if data block ~ ~ ~ components."minecraft:custom_data".lalib.LootTable run function lalib:player/find_block/fx/loot_table

@@ -1,8 +1,7 @@
 ## usage : load container properly (maybe)
 
-$function lalib:manage/load/specific/try_setblock {id:$(id)}
-$function lalib:manage/load/specific/$(id)
+execute if data storage lalib:temp block.LootTable run function lalib:manage/load/setblock/sign with storage lalib:temp block
+execute unless data storage lalib:temp block.LootTable run function lalib:manage/load/setblock/container with storage lalib:temp block
 
-function lalib:manage/load/setblock/3
 data modify block ~ ~ ~ components."minecraft:custom_data".lalib set from storage lalib:temp block
 data modify block ~ ~ ~ components."minecraft:custom_data".lalib.id set from storage lalib:temp curr_storage.id
